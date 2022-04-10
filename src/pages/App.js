@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className={styles.container} >
         <header className={styles.header}>
-          <img src="../assets/acxlogo.png" alt="alt" width="214" height="112" />
+          <img src={require("../assets/acxlogo.png")} alt="alt" width="214" height="112" />
         </header>
         <div className={styles.intro}>
           <span className={styles.introTitle}>{INTRO_TITLE}</span>
