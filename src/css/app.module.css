@@ -1,0 +1,35 @@
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    height: 132px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 283px;
+    width: 100%;
+}
+
+.introTitle {
+    font-size: 28px;
+
+}
+
+.introContent {
+    width: 800px;
+    font-size: 16px;
+}
+
+.error {
+    background-color: red;
+}
