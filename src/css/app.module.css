@@ -7,8 +7,10 @@
 .header {
     height: 132px;
     width: 100%;
+    position: relative;
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /*background-color: coral;*/
 }
 
 .intro {
@@ -32,6 +34,21 @@
     text-align: center;
 }
 
-.error {
-    background-color: red;
+.image {
+    width: 132px;
+    height: 60px;
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid;
+}
+.logButton {
+    width: 115px;
+    height: 40px;
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2px;
 }
