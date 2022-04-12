@@ -6,32 +6,11 @@
 
 .header {
     height: 132px;
-    width: 100%;
+    /*width: 100%;*/
     position: relative;
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     /*background-color: coral;*/
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 283px;
-    width: 100%;
-}
-
-.introTitle {
-    font-size: 28px;
-    margin-bottom: 20px;
-
-}
-
-.introContent {
-    width: 800px;
-    font-size: 16px;
-    text-align: center;
 }
 
 .image {
@@ -42,13 +21,4 @@
     top: 50%;
     transform: translateY(-50%);
     border: 2px solid;
-}
-.logButton {
-    width: 115px;
-    height: 40px;
-    position: absolute;
-    right: 90px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 2px;
 }

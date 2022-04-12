@@ -1,0 +1,21 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 283px;
+    width: 100%;
+    background-color: red;
+}
+
+.introTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+.introContent {
+    width: 800px;
+    font-size: 16px;
+    text-align: center;
+}

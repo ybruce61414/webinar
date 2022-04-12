@@ -1,4 +1,9 @@
-.logButton {
+.layout {
+    height: 100%;
+    width: 100%;
+    background-color: coral;
+}
+.authButton {
     width: 115px;
     height: 40px;
     position: absolute;

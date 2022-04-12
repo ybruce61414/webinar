@@ -2,13 +2,14 @@ import PropTypes from "prop-types";
 import React, { useEffect, useReducer } from "react";
 import UserContext from "./UserContext";
 import EnvContext from "./EnvContext";
+import { dataReducer, dataInitialState } from "../reducers/data";
 
 const ContextProvider = (props) => {
-  // const [userProfile] = useReducer(dataReducer, {
-  //   state: 'Ready',
-  //   values: props.profile,
-  // });
-  //
+  const [userProfile, dispatchUserProfile] = useReducer(
+    dataReducer,
+    dataInitialState
+  );
+
   // const {
   //   state: storedData,
   //   saveData,
@@ -30,21 +31,18 @@ const ContextProvider = (props) => {
       }
     >
       <UserContext.Provider
-        value={
-          {
-            // userProfile,
-            // allowPagePermission: props.allowPagePermission,
-          }
-        }
+        value={{
+          userProfile,
+          dispatchUserProfile,
+        }}
       >
         {props.children}
-        {/*<AppContextProvider>{props.children}</AppContextProvider>*/}
       </UserContext.Provider>
     </EnvContext.Provider>
   );
 };
+
 ContextProvider.propTypes = {
-  profile: PropTypes.object.isRequired,
   children: PropTypes.object.isRequired,
 };
 
