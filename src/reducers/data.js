@@ -6,6 +6,7 @@ export const ACTION_TYPE = {
   dataReady: "DATA_READY",
   notFound: "NOT_FOUND",
   reload: "RELOAD_DATA",
+  clear: "CLEAR_DATA",
   internalServerError: "INTERNAL_SERVER_ERROR",
 };
 
@@ -20,6 +21,11 @@ export function dataReducer(state, action) {
       return {
         state: COMMON_STATE.ready,
         values: action.values,
+      };
+    case ACTION_TYPE.clear:
+      return {
+        state: COMMON_STATE.notReady,
+        values: [],
       };
     case ACTION_TYPE.getData:
       return {

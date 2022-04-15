@@ -1,27 +1,24 @@
-import React from "react";
+import React, { memo } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import ContextProvider from "../context/ContextProvider";
-import ProtectRouter from "../components/ProtectRouter";
-import styles from "../css/app.module.css";
-import AuthButton from "../components/AuthButton";
-import Home from "../components/Home";
-const imgSrc = require("../assets/acxlogo.png");
+import ProtectRouter from "../components/router/ProtectRouter";
+import Home from "../components/main/Home";
+import Header from "../components/header/Header";
 
 function App() {
   const routeConfig = {
     pages: [{ element: Home, path: "/", elementProps: {} }],
   };
 
+  console.log("----app render");
+
   return (
     <ContextProvider>
       <ProtectRouter routeConfig={routeConfig}>
-        <header className={styles.header}>
-          <img src={imgSrc} alt="alt" className={styles.image} />
-          <AuthButton />
-        </header>
+        <Header />
       </ProtectRouter>
     </ContextProvider>
   );
 }
 
-export default App;
+export default memo(App);

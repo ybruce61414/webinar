@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import { INTRO_CONTENT, INTRO_TITLE } from "../local-constants/appConstants";
-import styles from "../css/home.module.css";
+import { INTRO_CONTENT, INTRO_TITLE } from "../../local-constants/appConstants";
+import styles from "../../css/home.module.css";
 
 const Home = (props) => {
   return (

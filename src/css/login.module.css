@@ -1,7 +1,78 @@
 .layout {
-    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 132px);
     width: 100%;
-    background-color: coral;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lightgray;
+    opacity: 0.6;
+    margin: 150px auto;
+    border-radius: 11px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.top-header {
+    margin: 30px;
+}
+
+.top-header h3 {
+    text-align: center;
+    color: #495d76;
+}
+.top-header p {
+    color: black;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+.inputWrapper {
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+ }
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 10px;
+}
+
+.signup button {
+    width: 250px;
+    height: 35px;
+    border: none;
+    background-color: #277ffd;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+::placeholder {
+    color: #9ca5b4;
+    font-size: 12px;
+}
+.signupForm {
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
 }
 .authButton {
     width: 115px;

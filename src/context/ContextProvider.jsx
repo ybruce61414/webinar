@@ -1,14 +1,17 @@
 import PropTypes from "prop-types";
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useState, useReducer } from "react";
 import UserContext from "./UserContext";
 import EnvContext from "./EnvContext";
 import { dataReducer, dataInitialState } from "../reducers/data";
 
 const ContextProvider = (props) => {
+  const [test, setTest] = useState("init");
   const [userProfile, dispatchUserProfile] = useReducer(
     dataReducer,
     dataInitialState
   );
+
+  console.log("-ContextProvider render---");
 
   // const {
   //   state: storedData,
@@ -34,6 +37,8 @@ const ContextProvider = (props) => {
         value={{
           userProfile,
           dispatchUserProfile,
+          test,
+          setTest,
         }}
       >
         {props.children}
